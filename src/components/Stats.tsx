@@ -1,6 +1,6 @@
 const stats = [
   {
-    value: "775K+",
+    value: "871K+",
     label: "Downloads",
     description: "Singers have downloaded Pocket Pitch",
   },

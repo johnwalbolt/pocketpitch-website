@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Pocket Pitch — Your Vocal Toolkit, Always With You",
   description:
-    "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 775,000+ singers worldwide. Download free on the App Store.",
+    "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 871,000+ singers worldwide. Download free on the App Store.",
   keywords: [
     "pitch pipe",
     "vocal tuner",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pocket Pitch — Your Vocal Toolkit, Always With You",
     description:
-      "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 775,000+ singers worldwide.",
+      "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 871,000+ singers worldwide.",
     type: "website",
   },
 };

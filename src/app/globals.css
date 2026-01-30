@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-primary: #D201BD;
+  --color-primary-dark: #B0019E;
+  --color-primary-light: #E0018C;
+  --color-accent: #C401EE;
+  --color-surface: #f8fafc;
+  --color-surface-alt: #f1f5f9;
+  --color-muted: #64748b;
+  --font-sans: var(--font-poppins);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Smooth gradient background for hero */
+.hero-gradient {
+  background: linear-gradient(135deg, #E0018C 0%, #C401EE 100%);
+}
+
+.hero-gradient-subtle {
+  background: linear-gradient(180deg, #fdf2fa 0%, #ffffff 100%);
+}
+
+/* Glowing effect for CTA */
+.glow {
+  box-shadow: 0 0 40px rgba(210, 1, 189, 0.3);
+}
+
+/* World map dot animation */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Stats counter gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #E0018C, #C401EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth section transitions */
+section {
+  scroll-margin-top: 80px;
 }

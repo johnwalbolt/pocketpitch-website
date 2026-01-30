@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
               <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-primary">
-                871,000+ downloads worldwide
+                781,000+ downloads worldwide
               </span>
             </div>
 

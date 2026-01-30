@@ -2,17 +2,17 @@ const stats = [
   {
     value: "781K+",
     label: "Unique Downloads",
-    description: "Unique singers have downloaded Pocket Pitch",
+    description: "Singers have downloaded Pocket Pitch.",
   },
   {
     value: "40K",
     label: "Monthly Active Users",
-    description: "Singers use Pocket Pitch every month",
+    description: "Singers use Pocket Pitch every month.",
   },
 {
     value: "4.6",
     label: "App Store Rating",
-    description: "Based on 1,954 ratings",
+    description: "Based on 1,954 ratings.",
   },
 ];
 

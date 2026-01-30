@@ -9,12 +9,7 @@ const stats = [
     label: "Monthly Active Users",
     description: "Singers use Pocket Pitch every month",
   },
-  {
-    value: "4K",
-    label: "Daily Active Users",
-    description: "Singers rely on Pocket Pitch every day",
-  },
-  {
+{
     value: "4.6",
     label: "App Store Rating",
     description: "Based on 1,954 ratings",
@@ -38,7 +33,7 @@ export default function Stats() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {stats.map((stat) => (
             <div
               key={stat.label}

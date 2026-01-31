@@ -41,7 +41,7 @@ export default function Footer() {
               Download
             </a>
             <Link
-              href="/terms"
+              href="/terms-of-service"
               className="text-sm text-muted transition-colors hover:text-foreground"
             >
               Terms of Service

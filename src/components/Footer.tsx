@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -39,6 +40,12 @@ export default function Footer() {
             >
               Download
             </a>
+            <Link
+              href="/terms"
+              className="text-sm text-muted transition-colors hover:text-foreground"
+            >
+              Terms of Service
+            </Link>
           </div>
 
           {/* Copyright */}

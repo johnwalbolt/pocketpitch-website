@@ -46,6 +46,14 @@ export default function Footer() {
             >
               Terms of Service
             </Link>
+            <a
+              href="https://www.iubenda.com/privacy-policy/43252892"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted transition-colors hover:text-foreground"
+            >
+              Privacy Policy
+            </a>
           </div>
 
           {/* Copyright */}

@@ -46,21 +46,24 @@ export default function Hero() {
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5">
               <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-primary">
-                781,000+ downloads worldwide
+                Trusted by 800,000+ singers
               </span>
             </div>
 
             {/* Headline */}
             <h1 className="max-w-xl text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl lg:leading-[1.1]">
-              Your vocal toolkit,{" "}
-              <span className="gradient-text">always in your pocket</span>
+              Always have the note,{" "}
+              <span className="gradient-text">wherever you are.</span>
             </h1>
 
             {/* Sub-headline */}
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-              Pitch pipe, piano, tuner, and vocal warmups — everything a singer
-              needs, right on your phone. From choir rehearsal to solo practice,
-              Pocket Pitch is always with you.
+              Warm up your voice. Train your ear.{" "}
+              <strong className="font-semibold text-foreground">
+                Always be ready to sing.
+              </strong>{" "}
+              A pitch pipe, piano, tuner, metronome, vocal warmups, and
+              practice tests, all in one app.
             </p>
 
             {/* CTA Buttons */}

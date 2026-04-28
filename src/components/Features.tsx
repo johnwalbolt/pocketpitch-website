@@ -1,8 +1,8 @@
-const features = [
+const coreTools = [
   {
     title: "Pitch Pipe",
     description:
-      "Get any starting note instantly. Chromatic pitch pipe with clear, sustained tones — perfect for choir directors and ensemble singers.",
+      "Play or identify any musical note, instantly. Chromatic pitch pipe with clear, sustained tones — perfect for choir directors and ensemble singers.",
     icon: (
       <svg
         className="h-7 w-7"
@@ -60,9 +60,32 @@ const features = [
     ),
   },
   {
+    title: "Metronome",
+    description:
+      "Lock in your tempo with a clean, customizable metronome. Practice rhythm, pace your warmups, and rehearse with confidence.",
+    icon: (
+      <svg
+        className="h-7 w-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 6v6l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
+  },
+];
+
+const extraFeatures = [
+  {
     title: "Vocal Warmups",
     description:
-      "Guided warmup exercises to get your voice ready for performance. Scales, arpeggios, and patterns designed for singers of all levels.",
+      "Warm up your voice. Anywhere. Guided exercises with scales, arpeggios, and patterns designed for singers of all levels.",
     icon: (
       <svg
         className="h-7 w-7"
@@ -79,6 +102,33 @@ const features = [
       </svg>
     ),
   },
+  {
+    title: "Practice Tests",
+    description:
+      "Train your ear and musical knowledge. See & Play, Hear & Sing, Hear & Play — track your Singer Score and grow with every session.",
+    icon: (
+      <svg
+        className="h-7 w-7"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+    ),
+  },
+];
+
+const useCases = [
+  "Rehearsals",
+  "Auditions",
+  "Choir practice",
+  "Performances",
 ];
 
 export default function Features() {
@@ -91,17 +141,17 @@ export default function Features() {
             Features
           </p>
           <h2 className="mt-3 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Everything you need to sing your best
+            Four core tools, plus more
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Four essential tools in one simple app — no bulky equipment, no
-            complicated setup. Just open and sing.
+            Pitch pipe, piano, tuner, metronome — everything a singer needs in
+            one simple app. No bulky equipment, no complicated setup.
           </p>
         </div>
 
-        {/* Feature Cards */}
+        {/* Core Tools */}
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature) => (
+          {coreTools.map((feature) => (
             <div
               key={feature.title}
               className="group rounded-2xl border border-slate-100 bg-white p-8 transition-all hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5"
@@ -119,34 +169,48 @@ export default function Features() {
           ))}
         </div>
 
-        {/* Always With You Callout */}
+        {/* Extra Features */}
+        <div className="mt-6 grid gap-6 sm:grid-cols-2">
+          {extraFeatures.map((feature) => (
+            <div
+              key={feature.title}
+              className="group rounded-2xl border border-slate-100 bg-white p-8 transition-all hover:border-primary/20 hover:shadow-lg hover:shadow-primary/5"
+            >
+              <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-foreground">
+                {feature.title}
+              </h3>
+              <p className="mt-3 leading-relaxed text-muted">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Use Case Strip */}
         <div className="mt-20 rounded-3xl bg-gradient-to-br from-primary/5 to-accent/5 p-10 text-center md:p-16">
           <div className="mx-auto max-w-2xl">
-            <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
-              <svg
-                className="h-7 w-7 text-primary"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={1.5}
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
-                />
-              </svg>
-            </div>
             <h3 className="text-3xl font-bold text-foreground md:text-4xl">
-              Always in your pocket
+              Play or identify any musical note,{" "}
+              <span className="gradient-text">instantly.</span>
             </h3>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              No more carrying a physical pitch pipe or searching for a piano
-              before rehearsal. Pocket Pitch lives on your phone — ready the
-              moment you need it. Whether you&apos;re warming up backstage,
-              finding your note in the choir loft, or practicing at home, your
-              complete vocal toolkit is always with you.
+              Always have the note, wherever you are. Pocket Pitch lives on
+              your phone — ready the moment you need it, whether you&apos;re
+              backstage, in the choir loft, or practicing at home.
             </p>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              {useCases.map((label) => (
+                <span
+                  key={label}
+                  className="rounded-full border border-primary/20 bg-white px-5 py-2 text-sm font-semibold text-primary"
+                >
+                  {label}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

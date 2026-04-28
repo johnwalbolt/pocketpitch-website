@@ -32,12 +32,6 @@ export default function Navbar() {
             Features
           </a>
           <a
-            href="#stats"
-            className="text-sm font-medium text-muted transition-colors hover:text-foreground"
-          >
-            Numbers
-          </a>
-          <a
             href="#reviews"
             className="text-sm font-medium text-muted transition-colors hover:text-foreground"
           >
@@ -94,13 +88,6 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               Features
-            </a>
-            <a
-              href="#stats"
-              className="text-sm font-medium text-muted"
-              onClick={() => setMenuOpen(false)}
-            >
-              Numbers
             </a>
             <a
               href="#reviews"

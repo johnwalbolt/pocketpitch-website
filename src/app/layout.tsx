@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Pocket Pitch — Your Vocal Toolkit, Always With You",
+  title: "Pocket Pitch — Always Be Ready to Sing",
   description:
-    "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 781,000+ singers worldwide. Download free on the App Store.",
+    "Pitch pipe, piano, tuner, metronome, vocal warmups, and practice tests — all in one app. Trusted by 800,000+ singers worldwide. Download free on the App Store.",
   keywords: [
     "pitch pipe",
     "vocal tuner",
@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "choir app",
     "vocal warmups",
     "piano app",
+    "metronome",
+    "ear training",
+    "practice tests",
     "singers",
   ],
   icons: {
@@ -26,9 +29,9 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "Pocket Pitch — Your Vocal Toolkit, Always With You",
+    title: "Pocket Pitch — Always Be Ready to Sing",
     description:
-      "Pitch pipe, piano, tuner, and vocal warmups — all in one app. Used by 781,000+ singers worldwide.",
+      "Pitch pipe, piano, tuner, metronome, vocal warmups, and practice tests — all in one app. Trusted by 800,000+ singers worldwide.",
     type: "website",
   },
 };

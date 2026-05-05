@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -40,12 +39,14 @@ export default function Footer() {
             >
               Download
             </a>
-            <Link
-              href="/terms-of-service"
+            <a
+              href="https://www.iubenda.com/terms-and-conditions/43252892"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-muted transition-colors hover:text-foreground"
             >
               Terms of Service
-            </Link>
+            </a>
             <a
               href="https://www.iubenda.com/privacy-policy/43252892"
               target="_blank"
